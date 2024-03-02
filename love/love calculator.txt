@@ -1,0 +1,23 @@
+print("Wellcome To Love Calculator")
+name1 = input("give me your name")
+name2 = input("give me your girlfriend's name")
+
+combined_name = name1 + name2
+name = combined_name.lower()
+t = name.count("t")
+r = name.count("r")
+u = name.count("u")
+e = name.count("e")
+first_digit = t+r+u+e
+
+l = name.count("l")
+o = name.count("o")
+v = name.count("v")
+e = name.count("e")
+second_digit = l+o+v+e
+
+score = str(first_digit) + str(second_digit)
+
+score = int(score)
+if score < 25:
+    print(f"your score is: {score} and you are not succesfull lover.")
